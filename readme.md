@@ -1,5 +1,5 @@
 # PCEVA
-This is the official PyTorch implemention of the paper *Enhancing Real-Time Super Resolution with Partial Convolution and Efficient Variance Attention* submitted to the 31st ACM International Conference on Multimedia
+This is the official PyTorch implementation of the paper *Enhancing Real-Time Super Resolution with Partial Convolution and Efficient Variance Attention* accepted by the 31st ACM International Conference on Multimedia
 
 Our PCEVA achieves a better trade-off between performance and actual running time than previous methods. 
 ![PCEVA achieves a better trade-off between performance and actual running time](figs/pceva_results.png)
@@ -11,7 +11,7 @@ Our PCEVA achieves a better trade-off between performance and actual running tim
  ![Our model architecture](figs/base_net.png)
 
 ## Training and testing
-We use the [BasicSR](https://github.com/XPixelGroup/BasicSR) framework for training and testing. We use the DIV2K and Flickr2K datasets for training and the dataset prepration instructions can be found [here](https://github.com/XPixelGroup/BasicSR/blob/master/docs/DatasetPreparation.md). It is recommended to use a conda environment with python 3.9 with pytorch 1.12.1. Install other requirements by running
+We use the [BasicSR](https://github.com/XPixelGroup/BasicSR) framework for training and testing. We use the DIV2K and Flickr2K datasets for training and the dataset preparation instructions can be found [here](https://github.com/XPixelGroup/BasicSR/blob/master/docs/DatasetPreparation.md). It is recommended to use a conda environment with Python 3.9 with pytorch 1.12.1. Install other requirements by running
 ```
 pip install -r requirements.txt
 ```
@@ -26,7 +26,7 @@ python runtime_test.py --scale 2 --model-name pceva  --fp16
 
 
 ## Quantitative Results of our PCEVA model
-We provide pretrained models for our PCEVA-S, PCEVA-M and PCEVA-L. PSNR index is tested on Set5 dataset. The FLOPs and inference latency are measured under the setting of generating 2560 × 1440 image
+We provide pretrained models for our PCEVA-S, PCEVA-M and PCEVA-L. PSNR index is tested on the Set5 dataset. The FLOPs and inference latency are measured under the setting of generating 2560 × 1440 image
 
 | name | scale | PSNR | latency | FLOPs | models|
 |:---:|:---:|:---:|:---:| :---:|:---:| 
